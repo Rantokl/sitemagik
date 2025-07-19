@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SiteMagik</title>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="logo" aria-label="Logo">SM</a>
+    <div class="nav-links">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">Services</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="cta-button">Travaillons ensemble</button>
+    <button class="mobile-menu-btn" aria-label="Ouvrir menu">
+      <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+        viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<section id="accueil" class="acceuil-section">
+  <div class="particles-container" aria-hidden="true">
+    <!-- 20 particles -->
+    <div class="particle" style="left: 10%; top: 15%; animation-delay: 0s; animation-duration: 5s;"></div>
+    <div class="particle" style="left: 45%; top: 30%; animation-delay: 0.5s; animation-duration: 6s;"></div>
+    <div class="particle" style="left: 80%; top: 20%; animation-delay: 1s; animation-duration: 5.5s;"></div>
+    <div class="particle" style="left: 60%; top: 60%; animation-delay: 1.5s; animation-duration: 6.5s;"></div>
+    <div class="particle" style="left: 25%; top: 75%; animation-delay: 2s; animation-duration: 4.5s;"></div>
+    <div class="particle" style="left: 75%; top: 80%; animation-delay: 2.5s; animation-duration: 5.8s;"></div>
+    <div class="particle" style="left: 15%; top: 50%; animation-delay: 3s; animation-duration: 6.2s;"></div>
+    <div class="particle" style="left: 50%; top: 90%; animation-delay: 3.5s; animation-duration: 5.3s;"></div>
+    <div class="particle" style="left: 90%; top: 40%; animation-delay: 4s; animation-duration: 4.7s;"></div>
+    <div class="particle" style="left: 35%; top: 10%; animation-delay: 4.5s; animation-duration: 5.1s;"></div>
+    <div class="particle" style="left: 70%; top: 25%; animation-delay: 1.2s; animation-duration: 5.9s;"></div>
+    <div class="particle" style="left: 40%; top: 40%; animation-delay: 0.9s; animation-duration: 6.1s;"></div>
+    <div class="particle" style="left: 55%; top: 70%; animation-delay: 1.7s; animation-duration: 5.7s;"></div>
+    <div class="particle" style="left: 85%; top: 85%; animation-delay: 2.3s; animation-duration: 6.3s;"></div>
+    <div class="particle" style="left: 20%; top: 20%; animation-delay: 3.1s; animation-duration: 5.6s;"></div>
+    <div class="particle" style="left: 65%; top: 55%; animation-delay: 2.8s; animation-duration: 5.9s;"></div>
+    <div class="particle" style="left: 30%; top: 80%; animation-delay: 4.2s; animation-duration: 5.4s;"></div>
+    <div class="particle" style="left: 95%; top: 15%; animation-delay: 3.8s; animation-duration: 5.2s;"></div>
+    <div class="particle" style="left: 50%; top: 30%; animation-delay: 4.8s; animation-duration: 6.0s;"></div>
+    <div class="particle" style="left: 10%; top: 90%; animation-delay: 1.9s; animation-duration: 6.4s;"></div>
+  </div>
+
+  <div class="max-container">
+    <div class="hero-text">
+      <h1>Je conçois des sites web modernes et performants pour booster votre présence en ligne.</h1>
+
+      <div class="glass-subtle">
+        <p>Développeur web freelance spécialisé en sites vitrines, e-commerce et projets sur mesure.<br />
+          Je vous accompagne de l'idée à la mise en ligne.</p>
+      </div>
+
+      <div class="btn-group">
+        <button class="glass-strong">Voir mes projets</button>
+        <button class="btn-outline">Me contacter</button>
+      </div>
+    </div>
+
+    <div class="profile-container" aria-label="Photo de profil">
+      <div class="glass-round">
+        <div class="profile-image-wrapper">
+          <img 
+            src="./sitemagik.png" 
+            alt="Profil" 
+            class="profile-image"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="floating-bubble bubble-1" aria-hidden="true">💻</div>
+      <div class="floating-bubble bubble-2" aria-hidden="true">🚀</div>
+      <div class="floating-bubble bubble-3" aria-hidden="true">⚡</div>
+    </div>
+  </div>
+</section>
+
+<section id="projets" class="projets-section">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="title-gradient">Mes Réalisations</h2>
+        <p class="subtitle">
+          Découvrez une sélection de mes projets récents, alliant design moderne et performances optimales.
+        </p>
+      </div>
+  
+      <!-- Filtres -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="Tous">Tous</button>
+        <button class="filter-btn" data-filter="Vitrine">Vitrine</button>
+        <button class="filter-btn" data-filter="E-commerce">E-commerce</button>
+        <button class="filter-btn" data-filter="Sur-mesure">Sur-mesure</button>
+      </div>
+  
+      <!-- Grille des projets -->
+      <div id="projects-grid" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <section id="apropos" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+  
+        <!-- About Content -->
+        <div class="about-content">
+          <div>
+            <h2 class="text-gradient">Qui suis-je ?</h2>
+            <div class="glass-subtle">
+              <p>
+                Passionné par le design et le code, je conçois des sites modernes, rapides et adaptés à vos besoins. 
+                J'aime créer des expériences uniques et accessibles.
+              </p>
+              <p>
+                Avec plus de 5 ans d'expérience dans le développement web, je vous accompagne dans la réalisation 
+                de vos projets digitaux, du simple site vitrine à l'application web complexe.
+              </p>
+            </div>
+          </div>
+  
+          <!-- Skills -->
+          <div class="glass-subtle">
+            <h3>Technologies maîtrisées</h3>
+            <div class="tech-list">
+              <span>React</span><span>Next.js</span><span>Vue.js</span><span>Node.js</span><span>WordPress</span><span>PHP</span><span>Python</span><span>TypeScript</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Services Grid -->
+        <div class="services-section">
+          <h3 class="text-gradient">Mes Services</h3>
+          <div id="services-grid" class="services-grid"></div>
+        </div>
+  
+      </div>
+  
+      <!-- Stats Section -->
+      <div class="stats-grid">
+        <div class="stat-box"><div class="text-gradient">50+</div><div>Projets réalisés</div></div>
+        <div class="stat-box"><div class="text-gradient">5+</div><div>Années d'expérience</div></div>
+        <div class="stat-box"><div class="text-gradient">100%</div><div>Clients satisfaits</div></div>
+        <div class="stat-box"><div class="text-gradient">24/7</div><div>Support disponible</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact"></section>
+    <div class="background-blur"></div>
+
+    <div class="container">
+      <div class="section-header">
+        <h2>Discutons de votre projet</h2>
+        <p>Vous avez un projet en tête ? N'hésitez pas à me contacter pour en discuter. Je serais ravi de vous accompagner.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Formulaire -->
+        <div class="contact-form">
+          <h3>Envoyez-moi un message</h3>
+          <form id="contactForm">
+            <div class="row">
+              <input type="text" placeholder="Votre nom" required>
+              <input type="email" placeholder="Votre email" required>
+            </div>
+            <input type="text" placeholder="Sujet du message" required>
+            <textarea placeholder="Décrivez votre projet..." rows="5" required></textarea>
+            <button type="submit">Envoyer le message</button>
+          </form>
+        </div>
+
+        <!-- Infos de contact -->
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Contact direct</h3>
+            <div class="info-item">📧 contact@monsite.com</div>
+            <div class="info-item">📱 +33 6 12 34 56 78</div>
+            <div class="info-item">📍 Paris, France</div>
+          </div>
+
+          <div class="info-card">
+            <h3>Retrouvez-moi sur</h3>
+            <div class="social-links">
+              <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+              <a href="https://github.com" target="_blank">💻 GitHub</a>
+              <a href="https://wa.me" target="_blank">📱 WhatsApp</a>
+              <a href="mailto:contact@example.com">📧 Email</a>
+            </div>
+          </div>
+
+          <div class="info-card text-center">
+            <h4>Prêt à commencer ?</h4>
+            <p>Obtenez un devis gratuit pour votre projet</p>
+            <button class="cta-button">Demander un devis</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
